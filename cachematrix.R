@@ -5,7 +5,9 @@
 ###############################################################
 
 ## The function makeCacheMatrix creates a "matrix" object which can cache 
-## its inverse
+## its inverse.  The function returns a list of 4 funtions that set and get
+## a matrix as well as set and get inverse matrix.  Call this function
+## first on a matrix object
 makeCacheMatrix <- function(x = matrix()) {
 	x.inv <- NULL
 	set <-function(y){
